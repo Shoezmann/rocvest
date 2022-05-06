@@ -1,0 +1,161 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "rocvest_revamp": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/rocvest_revamp",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/css/vendor/bootstrap.min.css",
+              "src/assets/css/vendor/slider.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/vendor/icons.min.css",
+              "src/assets/css/vendor/icons-fa.min.css",
+              "src/assets/css/vendor/animation.min.css",
+              "src/assets/css/vendor/gallery.min.css",
+              "src/assets/css/vendor/cookie-notice.min.css",
+              "src/assets/css/default.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "src/assets/js/vendor/jquery.min.js",
+              "src/assets/js/vendor/jquery.easing.min.js",
+              "src/assets/js/vendor/jquery.inview.min.js",
+              "src/assets/js/vendor/popper.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/vendor/ponyfill.min.js",
+              "src/assets/js/vendor/slider.min.js",
+              "src/assets/js/vendor/animation.min.js",
+              "src/assets/js/vendor/progress-radial.min.js",
+              "src/assets/js/vendor/bricklayer.min.js",
+              "src/assets/js/vendor/gallery.min.js",
+              "src/assets/js/vendor/shuffle.min.js",
+              "src/assets/js/vendor/cookie-notice.min.js",
+              "src/assets/js/vendor/particles.min.js",
+              "src/assets/js/main.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "rocvest_revamp:build:production"
+            },
+            "development": {
+              "browserTarget": "rocvest_revamp:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "rocvest_revamp:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/css/vendor/bootstrap.min.css",
+              "src/assets/css/vendor/slider.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/vendor/icons.min.css",
+              "src/assets/css/vendor/icons-fa.min.css",
+              "src/assets/css/vendor/animation.min.css",
+              "src/assets/css/vendor/gallery.min.css",
+              "src/assets/css/vendor/cookie-notice.min.css",
+              "src/assets/css/default.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "src/assets/js/vendor/jquery.min.js",
+              "src/assets/js/vendor/jquery.easing.min.js",
+              "src/assets/js/vendor/jquery.inview.min.js",
+              "src/assets/js/vendor/popper.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/vendor/ponyfill.min.js",
+              "src/assets/js/vendor/slider.min.js",
+              "src/assets/js/vendor/animation.min.js",
+              "src/assets/js/vendor/progress-radial.min.js",
+              "src/assets/js/vendor/bricklayer.min.js",
+              "src/assets/js/vendor/gallery.min.js",
+              "src/assets/js/vendor/shuffle.min.js",
+              "src/assets/js/vendor/cookie-notice.min.js",
+              "src/assets/js/vendor/particles.min.js",
+              "src/assets/js/main.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "rocvest_revamp"
+}
