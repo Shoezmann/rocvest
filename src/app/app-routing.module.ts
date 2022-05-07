@@ -24,10 +24,6 @@ const routes: Routes = [
     component: ServicesComponent
   },
   {
-    path: 'partners',
-    component: PartnersComponent
-  },
-  {
     path: 'careers',
     component: CareersComponent
   },
