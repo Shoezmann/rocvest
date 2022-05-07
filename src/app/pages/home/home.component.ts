@@ -5,7 +5,7 @@ import { AfterContentInit, AfterViewInit, Component, OnDestroy, OnInit } from '@
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterContentInit, OnDestroy {
+export class HomeComponent implements AfterContentInit {
 
   constructor() { }
 
