@@ -24,6 +24,7 @@ export class CareersComponent implements OnInit, AfterContentInit {
     this.jsfileload("/assets/js/vendor/bricklayer.min.js");
     this.jsfileload("/assets/js/vendor/gallery.min.js");
     this.jsfileload("/assets/js/vendor/shuffle.min.js");
+    this.jsfileload("/assets/js/vendor/cookie-notice.min.js");
     this.jsfileload("/assets/js/vendor/particles.min.js");
     this.jsfileload("/assets/js/main.js");
   }
