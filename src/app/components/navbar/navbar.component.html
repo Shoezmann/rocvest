@@ -58,8 +58,11 @@
                 <li class="nav-item">
                     <a [routerLink]="'/home'" class="nav-link" routerLinkActive="active">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a [routerLink]="'/about'" class="nav-link" routerLinkActive="active">ABOUT</a>
+                <li class="nav-item dropdown">
+                    <a [routerLink]="'/about'" class="nav-link" routerLinkActive="active">
+                        ABOUT
+                        <i class="icon-arrow-down"></i>
+                    </a>
                 </li>
                 <li class="nav-item ">
                     <a [routerLink]="'/services'" class="nav-link" routerLinkActive="active">SERVICES</a>

@@ -56,7 +56,7 @@
 
     --primary-t-color: #000007;
     --secondary-t-color: #f9f9f9; 
-    --primary-p-color: #606d75;
+    --primary-p-color: #212121;
     --secondary-p-color: #c0c3d0;
     --primary-b-color: #f9f9f9;
     --primary-l-color: rgba(0, 0, 0, .25);
@@ -67,7 +67,7 @@
 
     --primary-bg-color: #f9f9f9;
     --primary-bg-color-2: #f1f1f1;
-    --primary-bg-color-3: rgba(5, 130, 131, 0.15);
+    --primary-bg-color-3: #cecece;
 
     --secondary-bg-color: #111117;
     --secondary-bg-color-2: #080d10;

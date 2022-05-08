@@ -18,7 +18,7 @@
 *
 ----------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /*----------------------------------------------
@@ -4032,7 +4032,7 @@ footer.odd .nav-item .nav-link {
 }
 
 footer .nav-item .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--primary-bg-color-3);
     outline: none;
 }
 
@@ -4134,7 +4134,7 @@ footer .copyright p {
     line-height: 45px;
     text-align: center;
     border-radius: 100px;
-    background-color: rgba(5, 130, 131, 0.65);
+    background-color: #cecece;
     color: var(--white-color);
     -webkit-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
