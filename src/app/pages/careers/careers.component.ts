@@ -1,5 +1,10 @@
 import { AfterContentInit, AfterViewInit, Component, OnInit } from '@angular/core';
 
+interface Job {
+  title: string
+  description: string
+}
+
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
@@ -7,6 +12,12 @@ import { AfterContentInit, AfterViewInit, Component, OnInit } from '@angular/cor
 })
 export class CareersComponent implements OnInit, AfterContentInit {
 
+  jobs: Job[] = [
+    {title: 'Junior Account Executive', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
+    {title: 'Project Coordinator', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
+    {title: 'Intermediate Software Engineer (.Net, C#, Angular)', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
+    {title: 'Snr Account/Sales Executive', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
+  ];
   constructor() { }
 
   ngOnInit(): void {
