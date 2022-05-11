@@ -1256,7 +1256,7 @@ aside {
     padding: 35px 0 10px;
 }
 
-.counter .radial {
+.counter .radial { 
     position: relative;
     width: 110px;
     display: inline-block;
