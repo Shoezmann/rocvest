@@ -2,7 +2,7 @@ import { AfterContentInit, AfterViewInit, Component, OnInit } from '@angular/cor
 
 interface Job {
   title: string
-  description: string
+  email: string
 }
 
 @Component({
@@ -13,10 +13,10 @@ interface Job {
 export class CareersComponent implements OnInit, AfterContentInit {
 
   jobs: Job[] = [
-    {title: 'Junior Account Executive', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
-    {title: 'Project Coordinator', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
-    {title: 'Intermediate Software Engineer (.Net, C#, Angular)', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
-    {title: 'Snr Account/Sales Executive', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit magna, pulvinar sit amet ultricies suscipit, aliquam et ex. Praesent et enim velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum elementum laoreet. Sed vel leo lacus. Aenean accumsan dignissim ante, laoreet euismod massa mattis et. Pellentesque laoreet nulla non semper dictum. Vestibulum eleifend dolor ultricies quam bibendum fermentum. Aliquam erat volutpat.'},
+    {title: 'Junior Account Executive', email: 'careers@rocvest.com'},
+    {title: 'Project Coordinator', email: 'careers@rocvest.com'},
+    {title: 'Intermediate Software Engineer (.Net, C#, Angular)', email: 'careers@rocvest.com'},
+    {title: 'Snr Account/Sales Executive', email: 'careers@rocvest.com'},
   ];
   constructor() { }
 
