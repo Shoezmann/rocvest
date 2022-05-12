@@ -1,0 +1,16 @@
+.dropdown-menu{
+    border-top: 1px solid #aeaeaf;
+    background: #000007;
+    &.mega{
+        min-width: 100%;
+        padding: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+    &-items{
+        padding-left: 0;
+    }
+}
