@@ -3,6 +3,7 @@ import { AfterContentInit, AfterViewInit, Component, OnInit } from '@angular/cor
 interface Job {
   title: string
   email: string
+  company: string
 }
 
 @Component({
@@ -13,12 +14,12 @@ interface Job {
 export class CareersComponent implements OnInit, AfterContentInit {
 
   jobs: Job[] = [
-    {title: 'Account Executive', email: 'careers@rocvest.com'},
-    {title: 'Project Sales Agent', email: 'careers@rocvest.com'},
-    {title: 'Construction Quantity Surveyor', email: 'careers@rocvest.com'},
-    {title: 'Electrical Technician', email: 'careers@rocvest.com'},
-    {title: 'Project Coordinator', email: 'careers@rocvest.com'},
-    {title: 'Intermediate Software Engineer (.Net, C#, Angular)', email: 'careers@rocvest.com'},
+    {title: 'Account Executive', email: 'careers@rocvest.com', company: 'ROCVEST SYSTEMS (PTY) LTD - Information Technology'},
+    {title: 'Sales Agent', email: 'careers@rocvest.com', company: 'ROCVEST SYSTEMS (PTY) LTD - Information Technology'},
+    {title: 'Construction Quantity Surveyor', email: 'careers@rocvest.com', company: 'ROCVEST C3 (PTY) LTD - Construction, Civils, Consultants'},
+    {title: 'Electrical Technician', email: 'careers@rocvest.com', company: 'ROCVEST ENERGY - a division of ROCVEST C3 (PTY) LTD'},
+    {title: 'Project Coordinator', email: 'careers@rocvest.com', company: 'ROCVEST SYSTEMS (PTY) LTD - Information Technology'},
+    {title: 'Intermediate Software Engineer (.Net, C#, Angular)', email: 'careers@rocvest.com', company: 'ROCVEST SYSTEMS (PTY) LTD - Information Technology'},
   ];
   constructor() { }
 
