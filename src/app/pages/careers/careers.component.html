@@ -30,7 +30,7 @@
 </section>
 
 <!-- Partners -->
-<section id="partners" class="section-1 offers testimonials">
+<section id="partners" class="section-1 offers testimonials" style="background-color: white;">
     <div class="container">
         <div class="row text-center intro">
             <div class="col-12">
@@ -40,12 +40,11 @@
         </div>
         <div class="row justify-content-center items">
             <div data-aos="fade-up" class="col-12 col-md-6 item" *ngFor="let job of jobs">
-                <div class="card">
+                <div class="card" style="background-color: #111117; color: white;">
                     <div class="col-12">
-
-                        <h6><i class="fas pulse fas fa-address-card"></i>&nbsp;{{job.title}}</h6>
+                        <h6 style="color:white;"><i class="fas pulse fas fa-address-card"></i>&nbsp;{{job.title}}</h6>
                         <p>{{job.company}}</p>
-                        <p>Send CV to: <a href="mailto:{{job.email}}">{{job.email}}</a></p>
+                        <p>Send CV to: <a href="mailto:{{job.email}}" style="color:white;">{{job.email}}</a></p>
                         <!-- Action -->
                         <div class="buttons">
                             <div class="d-sm-inline-flex">

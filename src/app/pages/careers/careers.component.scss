@@ -2,3 +2,16 @@
     --hero-bg-color: #080d10;
     --section-1-bg-color: #cccccc;
 }
+
+.outline-button, .outline-button:visited, .outline-button:active {
+  position: relative;
+  z-index: 2;
+  padding: 10px 25px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: white;
+  color: white;
+  font-weight: 500;
+  transition: all .4s ease-out 0s;
+}
