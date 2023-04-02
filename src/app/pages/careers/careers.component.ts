@@ -13,10 +13,12 @@ interface Job {
 export class CareersComponent implements OnInit, AfterContentInit {
 
   jobs: Job[] = [
-    {title: 'Junior Account Executive', email: 'careers@rocvest.com'},
+    {title: 'Account Executive', email: 'careers@rocvest.com'},
+    {title: 'Project Sales Agent', email: 'careers@rocvest.com'},
+    {title: 'Construction Quantity Surveyor', email: 'careers@rocvest.com'},
+    {title: 'Electrical Technician', email: 'careers@rocvest.com'},
     {title: 'Project Coordinator', email: 'careers@rocvest.com'},
     {title: 'Intermediate Software Engineer (.Net, C#, Angular)', email: 'careers@rocvest.com'},
-    {title: 'Snr Account/Sales Executive', email: 'careers@rocvest.com'},
   ];
   constructor() { }
 
@@ -40,10 +42,10 @@ export class CareersComponent implements OnInit, AfterContentInit {
     this.jsfileload("/assets/js/main.js");
   }
   public jsfileload(url: any){
-    let node = document.createElement('script');  
-    node.src = url;  
-    node.type = 'text/javascript';  
-    document.getElementsByTagName('head')[0].appendChild(node); 
+    let node = document.createElement('script');
+    node.src = url;
+    node.type = 'text/javascript';
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
 }
