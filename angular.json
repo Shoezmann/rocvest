@@ -46,8 +46,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/js/vendor/jquery.min.js",
-              "src/assets/js/vendor/jquery.easing.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/jquery.easing/jquery.easing.min.js",
               "src/assets/js/vendor/jquery.inview.min.js",
               "src/assets/js/vendor/popper.min.js",
               "src/assets/js/vendor/bootstrap.min.js",
@@ -59,8 +59,8 @@
               "src/assets/js/vendor/gallery.min.js",
               "src/assets/js/vendor/shuffle.min.js",
               "src/assets/js/vendor/cookie-notice.min.js",
-              "src/assets/js/vendor/particles.min.js"
-              // "src/assets/js/main.js"
+              "src/assets/js/vendor/particles.min.js",
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {
@@ -139,21 +139,21 @@
               "src/styles.scss"
             ],
             "scripts": [
-              // "src/assets/js/vendor/jquery.min.js",
-              // "src/assets/js/vendor/jquery.easing.min.js",
-              // "src/assets/js/vendor/jquery.inview.min.js",
-              // "src/assets/js/vendor/popper.min.js",
-              // "src/assets/js/vendor/bootstrap.min.js",
-              // "src/assets/js/vendor/ponyfill.min.js",
-              // "src/assets/js/vendor/slider.min.js",
-              // "src/assets/js/vendor/animation.min.js",
-              // "src/assets/js/vendor/progress-radial.min.js",
-              // "src/assets/js/vendor/bricklayer.min.js",
-              // "src/assets/js/vendor/gallery.min.js",
-              // "src/assets/js/vendor/shuffle.min.js",
-              // "src/assets/js/vendor/cookie-notice.min.js",
-              // "src/assets/js/vendor/particles.min.js"
-              // "src/assets/js/main.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/jquery.easing/jquery.easing.min.js",
+              "src/assets/js/vendor/jquery.inview.min.js",
+              "src/assets/js/vendor/popper.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/vendor/ponyfill.min.js",
+              "src/assets/js/vendor/slider.min.js",
+              "src/assets/js/vendor/animation.min.js",
+              "src/assets/js/vendor/progress-radial.min.js",
+              "src/assets/js/vendor/bricklayer.min.js",
+              "src/assets/js/vendor/gallery.min.js",
+              "src/assets/js/vendor/shuffle.min.js",
+              "src/assets/js/vendor/cookie-notice.min.js",
+              "src/assets/js/vendor/particles.min.js",
+              "src/assets/js/main.js"
             ]
           }
         }
