@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { DetailsComponent } from './pages/services/details/details.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -21,7 +22,10 @@ const routes: Routes = [
   },
   {
     path: 'services',
-    component: ServicesComponent
+    component: ServicesComponent,
+    children: [
+      {path: 'details', component: DetailsComponent}
+    ]
   },
   {
     path: 'careers',
