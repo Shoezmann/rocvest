@@ -99,6 +99,21 @@
   </div>
 </section>
 
+<!-- Partners -->
+<section id="partners" class="section-5 odd partners">
+  <div class="overflow-holder">
+      <div class="container">
+          <div class="swiper-container min-slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-center item" *ngFor="let partner of partner; let i = index">
+                      <img src="../../../assets/images/partners/{{partner.title}}.jpg" class="fit-image" alt="Fit Image">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
 <!-- Skills -->
 <section id="skills" class="section-4 highlights image-right counter skills featured">
     <div class="container">

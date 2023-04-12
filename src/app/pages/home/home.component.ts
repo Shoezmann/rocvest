@@ -1,16 +1,18 @@
 import {  AfterViewInit, Component, OnInit } from '@angular/core';
+import { Partner } from './home.model';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnInit {
+  partner: Partner[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.partnerSlider();
   }
   ngAfterViewInit(){
     this.jsfileload("/assets/js/vendor/jquery.min.js");
@@ -31,10 +33,33 @@ export class HomeComponent implements AfterViewInit {
   }
 
   jsfileload(url: any){
-    let node = document.createElement('script');  
-    node.src = url;  
-    node.type = 'text/javascript';  
-    document.getElementsByTagName('head')[0].appendChild(node); 
+    let node = document.createElement('script');
+    node.src = url;
+    node.type = 'text/javascript';
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
+
+  partnerSlider(){
+    this.partner = [
+      {
+        title: 'mictseta',
+      },
+      {
+        title: 'djsproduction',
+      },
+      {
+        title: 'matabogeinc',
+      },
+      {
+        title: 'sos',
+      },
+      {
+        title: 'renaltnissan',
+      },
+      {
+        title: 'scooter',
+      }
+    ]
+  }
 }
