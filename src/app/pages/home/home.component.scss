@@ -1,7 +1,13 @@
-:host {                
+:host {
     --section-1-bg-color: #ffffff;
     --section-2-bg-color: #cccccc;
     --section-3-bg-color: #111117;
     --section-4-bg-color: #ffffff;
     --section-5-bg-color: #eef4ed;
+}
+
+.odd.partners img {filter: none;}
+.partners img {height: auto;}
+section.section-5  {
+  padding: 0 0 130px 0;
 }
