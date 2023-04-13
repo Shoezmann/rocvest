@@ -13,6 +13,8 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailsComponent } from './pages/services/details/details.component';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,16 @@ import { DetailsComponent } from './pages/services/details/details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#111117",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      showSubtitle: false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
